@@ -15,9 +15,22 @@ const App = () => (
     <div tw="flex flex-col justify-center h-full gap-y-5">
       <Button variant="primary">Submit</Button>
       <Button variant="secondary">Cancel</Button>
+      {/* Overriding CSS + specificity for the secondary variant */}
+      <Button variant="secondary" style={{ color: 'black' }}>
+        Submit with Black Text
+      </Button>
     </div>
     <Logo />
   </div>
 )
 
 export default App
+
+{
+  /* <Button
+        variant="secondary"
+        css={css`
+          color: black;
+        `}
+      > */
+}
