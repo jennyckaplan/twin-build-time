@@ -15,6 +15,7 @@ const containerVariants = {
     css`
       box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.25);
       color: #728FCE;
+      font-weight: normal;
     `
   ],
 }

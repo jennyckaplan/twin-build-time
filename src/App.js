@@ -16,8 +16,8 @@ const App = () => (
       <Button variant="primary">Submit</Button>
       <Button variant="secondary">Cancel</Button>
       {/* Overriding CSS + specificity for the secondary variant */}
-      <Button variant="secondary" css={css`color: black;`}>
-        Submit with Black Text
+      <Button variant="secondary" css={css`color: black; font-weight: 600;`}>
+        Submit with Black and Bold Text
       </Button>
     </div>
     <Logo />
@@ -25,12 +25,3 @@ const App = () => (
 )
 
 export default App
-
-{
-  /* <Button
-        variant="secondary"
-        css={css`
-          color: black;
-        `}
-      > */
-}
