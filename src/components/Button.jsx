@@ -20,6 +20,6 @@ const containerVariants = {
   ],
 }
 
-export const Button = ({ variant, children, className }) => {
-  return <button css={containerVariants[variant]} className={className}>{children}</button>
+export const Button = ({ variant, ...props }) => {
+  return <button css={containerVariants[variant]} {...props} />
 };
