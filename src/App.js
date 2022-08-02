@@ -1,5 +1,5 @@
 import React from 'react'
-import tw from 'twin.macro'
+import tw, { css } from 'twin.macro'
 import { Button, Logo } from './components'
 
 const styles = {
@@ -16,7 +16,7 @@ const App = () => (
       <Button variant="primary">Submit</Button>
       <Button variant="secondary">Cancel</Button>
       {/* Overriding CSS + specificity for the secondary variant */}
-      <Button variant="secondary" style={{ color: 'black' }}>
+      <Button variant="secondary" style={{ color: "black" }}>
         Submit with Black Text
       </Button>
     </div>
